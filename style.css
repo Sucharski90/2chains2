@@ -1,0 +1,29 @@
+a {
+  color: rgb(142, 167, 163);
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+#main {
+  font-size: 40px;
+  justify-content: center;
+}
+
+header {
+  background-color: red;
+  padding: 10px;
+  opacity: 0.2;
+}
+
+
+.top {
+   border: 1px solid red;
+   height: 600px;
+   width: 800px;
+ }

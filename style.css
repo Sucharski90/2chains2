@@ -1,3 +1,6 @@
+html {
+  background-color: rgb(251, 204, 252);
+}
 a {
   color: rgb(142, 167, 163);
   text-decoration: none;
@@ -18,7 +21,7 @@ ul {
 header {
   background-color: red;
   padding: 10px;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 
@@ -28,7 +31,39 @@ header {
    width: cover;
    background-repeat: no-repeat;
    background-image:url('images/header.png');
+   background-attachment: fixed;
  }
+
+ .newAlbum {
+    border: 1px solid red;
+    height: 600px;
+    width: cover;
+}
+
+.newAlbum a {
+  background-color: black;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.news {
+   border: 1px solid red;
+   height: 600px;
+   width: cover;
+   color: white;
+}
+
+.tourDates {
+   border: 1px solid red;
+   height: 600px;
+   width: cover;
+}
+
+.newsLetter {
+   border: 1px solid red;
+   height: 600px;
+   width: cover;
+}
 
 button {
   background-color: red;

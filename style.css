@@ -83,14 +83,14 @@ button {
 .newsBig {
    border: 1px solid red;
    height: 600px;
-   width: 49%;
+   width: 53%;
    float: left;
 }
 
 .newsFour {
    border: 1px solid red;
    height: 600px;
-   width: 50%;
+   width: 46%;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -100,9 +100,42 @@ button {
 
 #newSmallImage {
   height: 25%;
-  width: 25%;
+  width: 40%;
+  padding: 5%;
 }
 
 #newBigImage {
-  padding-left: 25%;
+  padding-left: 35%;
+}
+
+.tourDates {
+   border: 1px solid red;
+   height: 600px;
+   width: cover;
+
+ }
+
+#tourDatesh1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tourDates p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+#venue {
+  font-weight: bold;
+}
+
+#location {
+  color: grey;
+}
+
+#tickets {
+  background-color: navy;
 }

@@ -67,18 +67,6 @@ header {
    float: left;
 }
 
-.tourDates {
-   border: 1px solid red;
-   height: 600px;
-   width: cover;
-}
-
-.newsLetter {
-   border: 1px solid red;
-   height: 600px;
-   width: cover;
-}
-
 button {
   background-color: red;
   border-radius: 40%;
@@ -86,10 +74,35 @@ button {
 
 #info {
   display: block;
-
 }
 
 #albumLink {
   display: flex;
   flex-direction: row;
+}
+.newsBig {
+   border: 1px solid red;
+   height: 600px;
+   width: 49%;
+   float: left;
+}
+
+.newsFour {
+   border: 1px solid red;
+   height: 600px;
+   width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+}
+
+#newSmallImage {
+  height: 25%;
+  width: 25%;
+}
+
+#newBigImage {
+  padding-left: 25%;
 }

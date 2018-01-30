@@ -25,5 +25,12 @@ header {
 .top {
    border: 1px solid red;
    height: 600px;
-   width: 800px;
+   width: cover;
+   background-repeat: no-repeat;
+   background-image:url('images/header.png');
  }
+
+button {
+  background-color: red;
+  border-radius: 40%;
+}

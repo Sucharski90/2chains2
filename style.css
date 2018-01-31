@@ -12,21 +12,17 @@ a:hover, button:hover, #headerBar:hover {
 }
 
 #rotating-item-wrapper {
-    position: relative;
-    width: 980px;
-    height: 347px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
 }
 .rotating-item {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 600px;
-  width: cover;
-  /*background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
+  height: 480px;
+  width: 100%;
+  overflow: none;
+
 }
 
 .top ul {

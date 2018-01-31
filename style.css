@@ -1,12 +1,14 @@
 html {
   background-color: rgb(251, 204, 252);
 }
-a {
+.top a {
   color: rgb(142, 167, 163);
   text-decoration: none;
 }
-
-ul {
+a:hover, button:hover, #headerBar:hover {
+  color: rgb(80, 82, 97);
+}
+.top ul {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
@@ -138,4 +140,17 @@ button {
 
 #tickets {
   background-color: navy;
+}
+
+.newsLetter {
+  border: 1px solid red;
+  height: 600px;
+  width: cover;
+}
+
+#newsLetter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

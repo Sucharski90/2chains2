@@ -1,39 +1,49 @@
-let imgIndex = 1;
-let imgArray = [
-  'images/header.png',
-  'images/one.png',
-  'images/two.jpg'
-]
-
-let left = document.getElementById('left');
-let next = document.getElementById('right');
-let myImage = document.getElementById('mainImg');
-
-
-left.addEventListener('click', function(event) {
-  console.log("working");
-  myImage.setAttribute("src", imgArray[imgIndex]);
-  imgArray++
-  if(img src = undefined){
-    imgArray[i] = [0]
-  }
-})
-right.addEventListener('click', function(event) {
-  console.log("working");
-})
+//add sticky to header, taken off because it would mess up the image rotation
+// window.onscroll = function() {myFunction()};
+// let header = document.querySelector("header");
+// let sticky = header.offsetTop;
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
 
 
+$(window).load(function() {
+	let InfiniteRotator =
+	{
+		init: function()
+		{
+			let initialFadeIn = 1000;
 
+			let itemInterval = 5000;
 
+			let fadeTime = 2500;
 
+			let numberOfItems = $('.rotating-item').length;
 
+			let currentItem = 0;
 
-// let answer2 = document.getElementById('two');
+			$('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
 
-//
-// two.addEventListener('click', function(event) {
-//   console.log('working, answer2');
-//   myImage.setAttribute("src", imgArray[imgIndex]);
-//   imgArray++
-//   nextQuestion();
-// })
+			let infiniteLoop = setInterval(function(){
+				$('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+
+				if(currentItem == numberOfItems -1){
+					currentItem = 0;
+				}   else {
+
+				}{
+					currentItem++;
+				}
+				$('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+
+			}, itemInterval);
+		}
+	};
+
+	InfiniteRotator.init();
+
+});

@@ -1,14 +1,37 @@
 html {
-  background-color: rgb(251, 204, 252);
+  background-color: #ECBAD3;
 }
 .top a {
-  color: rgb(142, 167, 163);
+  color: white;
   text-decoration: none;
+  font-size: 50px;
+
 }
 a:hover, button:hover, #headerBar:hover {
   color: rgb(80, 82, 97);
 }
+
+#rotating-item-wrapper {
+    position: relative;
+    width: 980px;
+    height: 347px;
+}
+.rotating-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 600px;
+  width: cover;
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
 .top ul {
+  min-width: auto;
+  min-height: auto;
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
@@ -16,28 +39,39 @@ a:hover, button:hover, #headerBar:hover {
 }
 
 #main {
-  font-size: 40px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 6.6px;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 header {
-  background-color: red;
+  background-color: black;
   padding: 10px;
-  opacity: 0.3;
+  opacity: 0.4;
+}
+.sticky {
+  position: fixed;
+  width: 97%;
 }
 
-
 .top {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    height: 600px;
    width: cover;
+   position: relative;
+   background-position: center;
    background-repeat: no-repeat;
-   background-image:url('images/header.png');
+   background-size: cover;
+   /*background-image:url('images/pexels1.jpeg');*/
    background-attachment: fixed;
+
  }
 
  .newAlbum {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 600px;
     width: 50%;
     display: flex;
@@ -61,19 +95,33 @@ header {
   font-size: 20px;
   padding: 90px;
 }
-
+.newAlbum li:hover {
+  font-style: italic;
+  color: purple;
+}
 .newAlbumImage {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    height: 600px;
    width: 49%;
    float: left;
-}
 
-button {
-  background-color: red;
-  border-radius: 40%;
 }
+#newAlbumImage:hover {
+  -webkit-filter: blur(0);
+	filter: blur(0);
+}
+#newAlbumImage {
+  border-color: red;
+  border: 1px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
+  -webkit-filter: blur(3px);
+ filter: blur(3px);
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+}
 #info {
   display: block;
 }
@@ -83,14 +131,14 @@ button {
   flex-direction: row;
 }
 .newsBig {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    height: 600px;
    width: 53%;
    float: left;
 }
 
 .newsFour {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    height: 600px;
    width: 46%;
    display: flex;
@@ -106,15 +154,10 @@ button {
   padding: 5%;
 }
 
-#newBigImage {
-  padding-left: 35%;
-}
-
 .tourDates {
-   border: 1px solid red;
+   /*border: 1px solid red;*/
    height: 600px;
    width: cover;
-
  }
 
 #tourDatesh1 {
@@ -139,6 +182,7 @@ button {
 }
 
 #tickets {
+  color: white;
   background-color: navy;
 }
 

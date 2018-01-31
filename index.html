@@ -11,15 +11,22 @@
   <div class="top">
     <header>
       <ul>
-        <li><a href="http://www.2chainz.com/news">News</a></li>
-        <li><a href="http://www.2chainz.com/music">Music</a></li>
-        <li><a href="http://www.2chainz.com/videos">Video</a></li>
-        <li><a href="https://www.google.com/search?q=2+chainz&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjVq9_JiP7YAhWB2VMKHUE-AbgQ_AUIDCgD&biw=1440&bih=803">Photos</a></a></li>
-        <li><a href="https://www.2chainzshop.com/password">Store</a></li>
-        <li id="main"><a href="http://www.2chainz.com/">2 Chainz</a></li>
-        <button id="left"><</button>
-        <button id="right">></button>
+        <li><a href="http://www.2chainz.com/news"><span id="headerBar">News</span></a></li>
+        <li><a href="http://www.2chainz.com/music"><span id="headerBar">Music</span></a></li>
+        <li><a href="http://www.2chainz.com/videos"><span id="headerBar">Video</span></a></li>
+        <li><a href="https://www.google.com/search?q=2+chainz&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjVq9_JiP7YAhWB2VMKHUE-AbgQ_AUIDCgD&biw=1440&bih=803"><span id="headerBar">Photos</span></a></a></li>
+        <li><a href="https://www.2chainzshop.com/password"><span id="headerBar">Store</span></a></li>
+        <li id="main"><a href="http://www.2chainz.com/"><span id="headerBar">2 Chainz</span></a></li>
     </header>
+
+    <div id="rotating-item-wrapper">
+      <img class="rotating-item" src="images/pexels1.jpeg"/>
+     <img class="rotating-item" src="images/pexels2.jpeg"/>
+     <img class="rotating-item" src="images/pexels3.jpg"/>
+     <img class="rotating-item" src="images/pexels1.jpeg"/>
+     <img class="rotating-item" src="images/pexels2.jpeg"/>
+     <img class="rotating-item" src="images/pexels3.jpg"/></div>
+
   </div>
 
   <div class="newAlbumImage">
@@ -79,6 +86,8 @@
     <input>EMAIL ADDRESS*</input>
     <input>ZIP CODE*</input>
   </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script><script type="text/javascript" src="js/infinite-rotator.js"></script>
+
   <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

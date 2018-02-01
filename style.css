@@ -1,12 +1,14 @@
 html {
   background-color: #05061a;
+  color: white !important;
 }
 
 body {
   margin: 0 !important;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: white;
 }
 
 a:hover, button:hover, .header-bar:hover {
@@ -14,7 +16,7 @@ a:hover, button:hover, .header-bar:hover {
 }
 #left-header {
   display: grid;
-grid-template-columns: 20%;
+grid-template-columns: 1fr 1fr 1fr ;
   text-decoration: none;
   font-size: 18px;
     letter-spacing: 0px;
@@ -33,14 +35,16 @@ grid-template-columns: 20%;
   justify-content: space-between;
 }
 
-/*#main {
+#main {
   margin: 0 250px;
   font-size: 46px;
-  line-height: 69px;
+  line-height: 80%;
+  width: 35%;
+  padding: 3%;
   color: rgb(255,255,255);
   font-family: "American Typewriter";
   text-align: center;
-}*/
+}
 
 #rotating-item-wrapper {
   display: flex;
@@ -92,13 +96,12 @@ header {
    background-size: cover;
    /*background-image:url('images/pexels1.jpeg');*/
    background-attachment: fixed;
-
+   padding-bottom: 20%;
  }
 
  .newAlbum {
     /*border: 1px solid red;*/
     height: 600px;
-
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -116,7 +119,7 @@ header {
   width: 405px;
 }
 .song-container {
-  background-color: black;
+  background-color: #11173f;
   font-size: 15px;
   display: grid;
   grid-gap: 1em;
@@ -124,23 +127,32 @@ header {
   grid-row-gap: 1em;
 
 }
-
+.songs ul {
+  padding-left: 0px;
+}
+.songs li {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  width: 50%;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+}
 .newAlbum li:hover {
   font-style: italic;
   color: purple;
 
 }
-.newAlbumImage {
-   /*border: 1px solid red;*/
-   height: 600px;
-   width: 49%;
-   float: left;
-}
-.newAlbumImage:hover {
+
+#newAlbumImage:hover {
   -webkit-filter: blur(0);
 	filter: blur(0);
 }
-.newAlbumImage {
+#newAlbumImage {
+  left: 15%;
+  position: relative;
   -webkit-filter: blur(3px);
  filter: blur(3px);
  -webkit-transition: .3s ease-in-out;
@@ -148,35 +160,45 @@ header {
 }
 .info {
   display: block;
+  color: white;
+  font-family: "Playfair Display";
 }
-
+.songs {
+  color: white;
+}
 #albumLink {
   display: flex;
   flex-direction: row;
 
 }
 .newsBig {
-   /*border: 1px solid red;*/
-   height: 600px;
-   width: 53%;
-   float: left;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 10%;
 }
 
+#top-four {
+  padding-top: 30%;
+  padding-bottom: 5%;
+}
+#low-four {
+  padding-top: 0%;
+  padding-bottom: 60%;
+}
 .newsFour {
    /*border: 1px solid red;*/
    height: 600px;
    width: 46%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   flex-direction: row;
-   align-items: center;
+   display: grid;
+   grid-template-columns: 2fr 2fr;
 }
 
 .newSmallImage {
-  height: 25%;
-  width: 40%;
-  padding: 5%;
+
+  padding: 13%;
+padding-top: 25%;
 }
 
 .tourDates {

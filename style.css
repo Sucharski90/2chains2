@@ -126,7 +126,7 @@ header {
 .song-container {
   /*font-size: 19px;*/
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 5em;
   grid-template-columns: 5fr 5fr 5fr 5fr;
   grid-row-gap: 1em;
 
@@ -258,6 +258,7 @@ header {
 
  .news-letter h1 {
    padding-left: 25%;
+   color: #c49640;
  }
  .news-letter button {
    width: 20%;

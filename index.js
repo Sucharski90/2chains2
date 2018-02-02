@@ -25,24 +25,29 @@ $(window).load(function() {
 	InfiniteRotator.init();
 });
 
+let email = document.querySelector('email');
+let zip = document.querySelector('zip');
+let submit = document.querySelector('news-submit');
+
+
 
 // Attempt to add smooth scroll on click
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
+// $(document).ready(function(){
+//   $("a").on('click', function(event) {
+//
+//         if (this.hash !== "") {
+//           event.preventDefault();
+//           var hash = this.hash;
+//
+//           $('html, body').animate({
+//             scrollTop: $(hash).offset().top
+//           }, 800, function(){
+//
+//             window.location.hash = hash;
+//           });
+//         }
+//       });
+//     });
 
 
 

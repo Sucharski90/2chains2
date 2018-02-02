@@ -135,7 +135,7 @@ header {
 .songs p {
 
 }
-.new-album li:hover {
+.new-album p:hover {
   font-style: italic;
   color: purple;
 
@@ -262,6 +262,11 @@ header {
  .news-letter button {
    width: 20%;
    justify-self: center;
+   color: white;
+   background-color: #11173f;
+   border-color: #11173f;
+   padding: 2em 5%;
+   width: 20em;
  }
  .news-letter p {
    margin: 10px;
@@ -269,3 +274,12 @@ header {
   font-family: inherit;
   color: #86730d;
  }
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.footer p {
+  padding: 0px 40px;
+}

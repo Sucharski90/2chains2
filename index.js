@@ -30,7 +30,6 @@ let zip = document.querySelector('zip');
 let submit = document.querySelector('news-submit');
 
 
-
 // Attempt to add smooth scroll on click
 // $(document).ready(function(){
 //   $("a").on('click', function(event) {

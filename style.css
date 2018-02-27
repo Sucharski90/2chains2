@@ -307,10 +307,16 @@ header {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
+    #new-album-image{
+      height: 60%;
+      width: 60%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+  #new-album-image{
+    height: 60%;
+    width: 60%;
+  }
 
 }

@@ -202,13 +202,12 @@ header {
    height: 600px;
    width: 46%;
    display: grid;
-   grid-template-columns: 2fr 2fr;
+   grid-template-columns: 100% 100%;
 }
 
-.new-small-image {
+.new-big-image {
+    width: 100%;
 
-  /*padding: 13%;
-  padding-top: 25%;*/
 }
 
 .tour-dates {

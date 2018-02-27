@@ -184,10 +184,9 @@ header {
 }
 .news-big {
   display: grid;
-  grid-template-columns: 49% 49%;
+  grid-template-columns: 45% 55%;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  margin: 10%;
 }
 
 #top-four {
@@ -208,8 +207,8 @@ header {
 
 .new-small-image {
 
-  padding: 13%;
-  padding-top: 25%;
+  /*padding: 13%;
+  padding-top: 25%;*/
 }
 
 .tour-dates {
@@ -306,4 +305,13 @@ header {
 }
 .footer p {
   padding: 0px 40px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
 }

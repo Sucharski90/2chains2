@@ -146,7 +146,7 @@ header {
 	filter: blur(0);
 }
 #new-album-image {
-  left: 13%;
+  left: 15%;
   position: relative;
   -webkit-filter: blur(3px);
  filter: blur(3px);
@@ -184,9 +184,10 @@ header {
 }
 .news-big {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 49% 49%;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
+  margin: 10%;
 }
 
 #top-four {
@@ -202,12 +203,13 @@ header {
    height: 600px;
    width: 46%;
    display: grid;
-   grid-template-columns: 100% 100%;
+   grid-template-columns: 2fr 2fr;
 }
 
-#new-big-image {
-    width: 100%;
+.new-small-image {
 
+  padding: 13%;
+  padding-top: 25%;
 }
 
 .tour-dates {
@@ -304,19 +306,4 @@ header {
 }
 .footer p {
   padding: 0px 40px;
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    #new-album-image{
-      height: 60%;
-      width: 60%;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #new-album-image{
-    height: 60%;
-    width: 60%;
-  }
-
 }
